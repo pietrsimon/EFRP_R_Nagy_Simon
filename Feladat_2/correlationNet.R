@@ -1,3 +1,12 @@
+# Ez a függvény ábrázolja a korrelációs idősorok
+# maximumát, minimumát és átlagát hálózati ábrán.
+
+# A háló színe azt jelenti, hogy ott a korreláció
+# maximumának/minimumának/átlagának abszolút értéke éppen az általunk kijelölt
+# (alsó és felső) határokon kívül, vagy azok közé esik.
+# A határokat úgy állítottuk be, hogy a
+# window = 150, lag = 2 értéknél essen a legtöbb abszolút érték a határok közé.
+
 correlationNet = function(X, way = "max"){
   
     maxes <- apply(X$AllCorr,2,max)
