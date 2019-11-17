@@ -1,3 +1,5 @@
+# Ezt a függvényt kaptuk, az általunk nem használt részek ki vannak benne kommentelve.
+
 correlationAnalysis <- function(X){
   TS1 <- X$LAST %>% dplyr::select(X$Maturity[1])#saving appropriate timeseries from dataframe based on maturities
   TS2 <- X$LAST %>% dplyr::select(X$Maturity[2])
