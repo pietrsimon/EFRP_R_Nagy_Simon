@@ -1,3 +1,5 @@
+# Ezt a függvényt kaptuk, az általunk nem használt részek ki vannak benne kommentelve.
+
 staticCorrelation <- function(FirstTS, SecondTS, Window, Lag){
   Correlation <- c()
   for (t in 1:(length(FirstTS) - Window - Lag + 1)){
